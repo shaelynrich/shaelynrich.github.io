@@ -1,0 +1,10 @@
+p {
+  background-color: aqua;
+  padding: 12px;
+  border: dashed #000 5px;
+  margin: 50px;
+  width: 400px;
+}
+
+
+/*width is assigned to the content box (not margin or padding) this paragraph is actually 600+px wide*/
