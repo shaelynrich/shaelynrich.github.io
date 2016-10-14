@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Weather Site</title>
+  <title>Franklin Weather Site</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="../css/weather.css" media="screen">
 </head>
@@ -12,17 +12,24 @@
   <div id="content">
 
     <header>
-      <h1>Weather Site</h1>
+      <h1>Weather</h1>
     </header>
 
     <nav>
-      <p>
-        <ul>
-          <li>Home</li>
-          <li>Franklin</li>
-          <li>Greenville</li>
-          <li>Springfield</li>
-        </ul>
+      <ul>
+        <li id="globe">
+          <a href="weather.html"><img src="../images/globe.png" width=15%></a>
+        </li>
+        <!--
+        <li><a href="../homework/weather.html">Franklin</a></li>
+        <li><a href="../homework/weather.html">Greenville</a></li>
+        <li><a href="../homework/weather.html">Springfield</a></li>
+-->
+        <li>
+          <input type="text" name="search" placeholder="Search Location">
+        </li>
+
+      </ul>
     </nav>
 
     <main>
@@ -35,11 +42,12 @@
         <p id="wind">Wind: 1-5</p>
         <p id="direction">Direction: Southwest</p>
         <p id="summary">Summary: Sunny</p>
+        <img src="../images/sunny.jpeg" alt="Sunny">
         <p id="longitude">Longitude: -111.803757</p>
         <p id="latitude">Latitude: 42.011902</p>
         <p id="zip">Zip code: 83237</p>
-        <ul>
-          <li id="hourly">Hourly: 0000 - 67
+
+        <!--       <ul><li id="hourly">Hourly: 0000 - 67
             <br>0100 - 67
             <br>0200 - 69
             <br>0300 - 69
@@ -63,12 +71,15 @@
             <br>2100 - 70
             <br>2200 - 68
             <br>2300 - 66 </li>
-        </ul>
+        </ul>-->
       </section>
       <section id="greenville">
       </section>
       <section id="springfield">
       </section>
+
+      <img src="../images/smalldevice.JPG" alt="small device wireframe">
+
     </main>
 
     <footer>

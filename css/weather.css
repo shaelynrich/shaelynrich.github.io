@@ -1,0 +1,44 @@
+/*Change the CSS box model*/
+
+html * {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  vertical-align: center;
+}
+
+nav {
+  background-color: aqua;
+}
+
+ul li {
+  display: inline;
+}
+
+#globe {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -25px;
+}
+
+input[type=text] {
+  width: 200px;
+  border: 2px solid gray;
+  font-size: 16px;
+  background-color: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 40px;
+}
