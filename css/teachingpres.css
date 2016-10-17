@@ -1,7 +1,26 @@
-#relative {
-  font-size: 20vw;
+h1 {
+  font-size: 4em;
 }
 
-#absolute {
-  font-size: 10cm;
+h2 {
+  font-size: 3em;
+}
+
+nav a {
+  font-size: 1.25em;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.15em;
+}
+
+ul li {
+  font-size: 1.25em;
+}
+
+footer li {
+  list-style-type: none;
+  display: inline;
+  font-size: 1em;
 }

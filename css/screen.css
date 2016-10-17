@@ -17,5 +17,16 @@ p {
   width: 400px;
 }
 
+body {
+  font-size: 24px;
+  margin: 0;
+}
+
+#wrapper {
+  width: 95%;
+  margin: 0 auto;
+  background-color: yellow;
+}
+
 
 /*width is assigned to the content box (not margin or padding) this paragraph is actually 600+px wide*/
