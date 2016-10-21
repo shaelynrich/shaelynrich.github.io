@@ -1,0 +1,64 @@
+html * {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font: 20px "times new roman", times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  #page-header {
+    width: 100%;
+    text-align: center;
+  }
+  #page-nav {
+    float: left;
+    width: 30%;
+    padding: 1em;
+  }
+  main {
+    width: 40%;
+    float: left;
+    margin: 1em;
+    padding: 1em;
+  }
+  h1 {
+    margin: 0 0 0 0;
+  }
+  #page-aside {
+    float: left;
+    width: 20%;
+    padding: 1em;
+  }
+  #page-footer {
+    clear: left;
+  }
+}
+
+
+/*adding a div class="row" will automatically create columns for each of those children
+only use divs when there is not a semantic element to do a job or for styling purposes*/
+
+
+/*
+@media screen and (min-width: 600px) {
+  main {
+    overflow: hidden;
+    max-width: 70%
+  }
+  #page-nav {
+    float: left;
+  }
+  #page-aside {
+    float: right;
+    max-width: 15%
+  }
+}
+*/
