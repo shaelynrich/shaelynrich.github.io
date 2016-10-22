@@ -1,0 +1,179 @@
+#page-header {
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2em;
+  background-color: lightblue;
+}
+
+h1 {
+  margin: 0;
+}
+
+#page-nav {
+  border-top-style: solid;
+  border-top-color: #000000;
+  padding: 0.5em;
+}
+
+nav img {
+  width: 30%;
+}
+
+nav li {
+  list-style-type: none;
+  width: 20%;
+  float: left;
+  padding: .2em;
+  margin-top: 0.5em;
+  margin-left: 0.1em;
+  font-size: .9em;
+  text-align: center;
+}
+
+nav a {
+  color: black;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  width: 100%;
+  clear: left;
+}
+
+.row img {
+  float: left;
+  width: 40%;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.row p {
+  float: left;
+  width: 40%;
+  font-size: 2em;
+  margin-left: 0.5em;
+  margin-top: 1em;
+}
+
+.row2 {
+  width: 100%;
+  clear: left;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.row3 {
+  width: 100%;
+  clear: left;
+  text-align: center;
+}
+
+.row4 {
+  width: 100%;
+  clear: left;
+  display: none;
+}
+
+#page-footer {
+  width: 100%;
+  text-align: center;
+  font-size: .8em;
+  clear: left;
+}
+
+aside {
+  display: none;
+}
+
+#wireframes {
+  clear: left;
+}
+
+@media screen and (min-width: 600px) {
+  #page-nav {
+    font-size: 2em;
+  }
+  nav img {
+    width: 40%;
+  }
+  .row p {
+    font-size: 3em;
+    margin-left: 1em;
+    margin-top: 1.5em;
+  }
+  .row2 {
+    font-size: 2em;
+  }
+  .row3 {
+    column-count: 2;
+    font-size: 1.5em;
+  }
+  .row4 {
+    display: block;
+    margin-top: 3em;
+    border-top-style: solid;
+    border-top-color: #000000;
+    padding: 0.5em;
+  }
+  .row4 li {
+    list-style-type: none;
+    float: left;
+    margin: .2em;
+    font-size: 1.5em;
+    clear: left;
+  }
+  .row4 ul {
+    column-count: 3;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #page-nav {
+    font-size: 2.25em;
+  }
+  .row p {
+    font-size: 3.25em;
+    margin-left: 1.25em;
+    margin-top: 3em;
+  }
+  .row2 {
+    font-size: 2.25em;
+  }
+  .row3 {
+    font-size: 1.75em;
+  }
+  .row4 {
+    margin-top: 3.25em;
+    padding: 0.75em;
+  }
+  .row4 li {
+    margin: .2em;
+    font-size: 1.6em;
+  }
+  .row4 ul {
+    column-count: 4;
+  }
+  main {
+    clear: left;
+    float: left;
+    width: 70%;
+  }
+  aside {
+    display: block;
+    width: 20%;
+    float: left;
+    padding-left: 2em;
+    margin: 2em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+}

@@ -1,3 +1,5 @@
+/*css for a mobile device layout - anything less than ...css pixels*/
+
 #navigation {
   display: flex;
   flex-flow: row wrap;
@@ -91,3 +93,12 @@ footer li {
   display: inline;
   font-size: 0.7em;
 }
+
+
+/*css for a tablet device layout - anything more than ...css pixels but less than ...css pixels*/
+
+
+/*
+@media screen and (min-width: 421px) {
+.class ...
+}*/
