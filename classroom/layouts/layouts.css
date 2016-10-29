@@ -13,7 +13,44 @@ body {
   padding: 0;
 }
 
-@media screen and (min-width: 600px) {
+#wrapper {
+  display: flex;
+  /*  flex-direction: row; this is the default*/
+  flex-wrap: wrap;
+}
+
+
+/*
+#page-header {
+ width: 100%; this is the default
+}
+*/
+
+.row {
+  display: flex;
+}
+
+#page-nav {
+  width: 20%;
+}
+
+main {
+  width: 50%;
+}
+
+#page-aside {
+  width: 30%;
+}
+
+#page-nav,
+main,
+#page-aside,
+#page-header {
+  border: 1px solid #000;
+}
+
+
+/*@media screen and (min-width: 600px) {
   #page-header {
     width: 100%;
     text-align: center;
@@ -41,24 +78,8 @@ body {
     clear: left;
   }
 }
+*/
 
 
 /*adding a div class="row" will automatically create columns for each of those children
 only use divs when there is not a semantic element to do a job or for styling purposes*/
-
-
-/*
-@media screen and (min-width: 600px) {
-  main {
-    overflow: hidden;
-    max-width: 70%
-  }
-  #page-nav {
-    float: left;
-  }
-  #page-aside {
-    float: right;
-    max-width: 15%
-  }
-}
-*/
