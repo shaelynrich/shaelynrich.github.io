@@ -33,12 +33,13 @@ nav ul {
 
 nav img {
   /*  this is a flex item*/
-  width: 10%;
+  width: 30%;
 }
 
 nav li {
   /*  flex item*/
   list-style-type: none;
+  margin-left: 5px;
 }
 
 nav a {
