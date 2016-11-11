@@ -50,10 +50,10 @@ h1 {
 /*	Background Images - use with Small screens */
 
 .page-header {
-  background-image: url(../images/nps-logo-50.jpg), url(../images/banner-gc-400.jpg);
+  background-image: url(../images/nps-logo-50.png), url(../images/banner-gc-400.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: right, center;
-  background-size: auto, cover;
+  background-size: contain, cover;
 }
 
 
@@ -176,10 +176,10 @@ h1 {
   }
   /*	Background Images - Use with medium screens */
   .page-header {
-    background-image: url(../images/nps-logo-100.jpg), url(../images/banner-gc-800.jpg);
+    background-image: url(../images/nps-logo-100.png), url(../images/banner-gc-800.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: right, center;
-    background-size: auto, cover;
+    background-size: contain, cover;
   }
   .page-nav {
     position: relative;
@@ -226,10 +226,10 @@ h1 {
   }
   /*	Background Images - Use with large screens */
   .page-header {
-    background-image: url(../images/nps-logo-150.jpg), url(../images/banner-gc-1200.jpg);
+    background-image: url(../images/nps-logo-150.png), url(../images/banner-gc-1200.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: right;
-    background-size: auto, cover;
+    background-size: contain, cover;
   }
   .page-nav li {
     flex: 0 1 10%;
