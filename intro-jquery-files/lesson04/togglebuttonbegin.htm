@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ToggleButton</title>
+  <link rel="stylesheet" href="css/togglebtn.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <a href="#" class="toggleBtn">Navigation</a>
+    <a href="#" class="toggleBtn">Fuel Monitor</a>
+    <a href="#" class="toggleBtn">Battery Monitor</a>
+    <!--    adding a toggleOn class will make it look like the button is permanently clicked-->
+  </div>
+  <!--  <script src="js/jquery-3.0.0.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $('.toggleBtn').click(function () {
+        $(this).toggleClass("toggleOn");
+        //this adds toggleOn or removes it if it is already there
+      })
+
+    })
+  </script>
+</body>
+
+</html>
