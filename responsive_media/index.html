@@ -34,9 +34,14 @@
         </picture>
 
         <!--
-        <img srcset="images/bridge-500.jpg 500w,
-                     images/bridge-900.jpg 900w,
-                     images/bridge-1200.jpg 1200w" alt="Picture from the Grand Canyon" sizes="(min-width: 41.67em) 500px, 900px" src="images/bridge-500.jpg">
+        <figure class="featured-image">
+              <img                                  the width number has to match the width of the image or it gets ignored
+                  srcset="images/bridge-500.jpg 500w,
+                          images/bridge-900.jpg 900w,
+                          images/bridge-1200.jpg 1200w"
+                  sizes="(min-width: 1400px   --when the browser window reaches 1400 then) 50vww, 33vw...-these are media queries 33 is the default...so the image will be 33% of vw if screen size doesn not reach 1400"
+                  alt="..."
+              >
 -->
 
         <figcaption class="image-caption">
