@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title id="title">Search Location | Wallaby Weather</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="../css/franklin.css" media="screen">
+</head>
+<!-- *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. Shaelyn Rich
+* 2. Joseph Canto
+* ******************************************** -->
+
+<body>
+  <div id="wrapper">
+
+    <header></header>
+
+    <nav>
+      <noscript>JavaScript is not enabled. For navigation visit the <a href="../homework/sitemap.html">Site Map</a>.
+      </noscript>
+    </nav>
+
+    <main>
+      <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+        <input type="search" name="query" id="query">
+        <input type="submit" name="submit" value="Search" id="send">
+      </form>
+      <section id="searchResults"></section>
+      <div id="sunandcity">
+        <img id="icon">
+        <p id="cityState"></p>
+      </div>
+      <p id="highlow"></p>
+      <p id="summary"></p>
+      <p id="wind"></p>
+      <p id="feelsLike"></p>
+      <p id="precip"></p>
+      <p id="winddirect"></p>
+    </main>
+
+    <aside>
+      <p><strong>BREAKING NEWS</strong></p>
+      <ul>
+        <li>Woman arrested for allegedly trying to light Molotov cocktail in Times Square</li>
+        <li>Protests after Wonder Woman named to honorary UN post</li>
+        <li>Young Princess Charlotte's new favorite hobby is ... </li>
+        <li>Archaeologists locate site where ancient Roman army breached Jerusalem walls</li>
+        <li>19 die as helicopter carrying oil workers crashes in Russia</li>
+        <li>35 members of notorious gang with links to El Salvador arrested in NY</li>
+        <li>Pentagon recovers cash bonuses paid to California soldiers for going to war a decade ago</li>
+        <li>Moment autistic boy bonds with service dog touches thousands</li>
+        <li>Photo of premature newborn's smile goes viral</li>
+      </ul>
+    </aside>
+    <div id=wireframes></div>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="modules/modules.js"></script>
+    <script src="modules/search.js"></script>
+  </div>
+</body>
+
+</html>

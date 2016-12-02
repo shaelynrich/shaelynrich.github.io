@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Search Page</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="#" media="screen">
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <header id="page-header">
+      <h1>Search Bar Practice</h1>
+    </header>
+
+    <nav id="page-nav">
+      <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+        <input type="search" name="query" id="query">
+        <input type="submit" name="submit" value="Search" id="send">
+      </form>
+    </nav>
+
+    <main id="page-main">
+      <section id="searchResults">
+        <h2>Search Results</h2>
+      </section>
+    </main>
+
+    <footer id="page-footer">
+      <p>Last updated: 11/29/2016</p>
+    </footer>
+
+    <!--    cdn version-->
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+    <!--    local version-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="/menu-activity/scripts/search.js"></script>
+
+  </div>
+</body>
+
+</html>
