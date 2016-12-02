@@ -2,7 +2,7 @@ $('#query').keyup(function () {
   // All code will be inside of this block
   var value = $('#query').val();
   var rExp = new RegExp(value, "i");
-  $.getJSON("http://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
+  $.getJSON("https://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
     console.log(data);
     // Begin building output
     var output = '<ol>';
@@ -22,7 +22,7 @@ $('#query').keyup(function () {
 function getData(lat, lon) {
   // Get the data from the wunderground API
   $.ajax({
-    url: "http://api.wunderground.com/api/2b54603e3f31a8af/geolookup/conditions/q/" + lat + "," + lon + ".json",
+    url: "https://api.wunderground.com/api/2b54603e3f31a8af/geolookup/conditions/q/" + lat + "," + lon + ".json",
     dataType: "jsonp",
     success: function (data) {
       console.log(data);
