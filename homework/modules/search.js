@@ -32,7 +32,7 @@ function getData(lat, lon) {
       var precip = 'Precipitation: ' + data.current_observation.precip_today_in;
       var wind = 'Wind Direction: ' + data.current_observation.wind_dir;
       var feel = 'Feels like: ' + Math.round(data.current_observation.feelslike_f) + String.fromCharCode(176) + 'F';
-      var highlow = 'High: ' + Math.round(data.forecast.simpleforecast.forecastday["0"].high.fahrenheit) + String.fromCharCode(176) + 'F Low: ' + Math.round(data.forecast.simpleforecast.forecastday["0"].low.fahrenheit) + String.fromCharCode(176);
+      var highlow = 'High: ' + Math.round(data.forecast.simpleforecast.forecastday["0"].high.fahrenheit) + String.fromCharCode(176) + 'F | Low: ' + Math.round(data.forecast.simpleforecast.forecastday["0"].low.fahrenheit) + String.fromCharCode(176) + "F";
       $('#title').text(heading);
       $("#summary").text(toTitleCase('Summary: ' + data.current_observation.icon));
       $("#cityState").text(cityState);
