@@ -54,6 +54,10 @@ form {
   width: 100%;
 }
 
+#searchResults {
+  width: 100%;
+}
+
 main {
   background-color: white;
   display: flex;

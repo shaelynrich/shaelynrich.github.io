@@ -22,7 +22,7 @@ $('#query').keyup(function () {
 function getData(lat, lon) {
   // Get the data from the wunderground API
   $.ajax({
-    url: "https://api.wunderground.com/api/2b54603e3f31a8af/geolookup/conditions/q/" + lat + "," + lon + ".json",
+    url: "https://api.wunderground.com/api/2b54603e3f31a8af/geolookup/conditions/forecast/q/" + lat + "," + lon + ".json",
     dataType: "jsonp",
     success: function (data) {
       console.log(data);
@@ -32,6 +32,7 @@ function getData(lat, lon) {
       var precip = 'Precipitation: ' + data.current_observation.precip_today_in;
       var wind = 'Wind Direction: ' + data.current_observation.wind_dir;
       var feel = 'Feels like: ' + Math.round(data.current_observation.feelslike_f) + String.fromCharCode(176) + 'F';
+      var highlow = 'High: ' + Math.round(data.forecast.simpleforecast.forecastday["0"].high.fahrenheit) + String.fromCharCode(176) + 'F Low: ' + Math.round(data.forecast.simpleforecast.forecastday["0"].low.fahrenheit) + String.fromCharCode(176);
       $('#title').text(heading);
       $("#summary").text(toTitleCase('Summary: ' + data.current_observation.icon));
       $("#cityState").text(cityState);
@@ -40,6 +41,7 @@ function getData(lat, lon) {
       $("#precip").text(precip);
       $("#winddirect").text(wind);
       $("#feelsLike").text(feel);
+      $("#wind").text(highlow);
       $("#cover").fadeOut(250);
     }
   });
@@ -55,19 +57,10 @@ function toTitleCase(str) {
 // Intercept the menu link clicks
 $("#searchResults").on("click", "a", function (evt) {
   evt.preventDefault();
+  var i = $(this).index('a');
   $("#searchResults").hide();
   // With the text value get the needed value from the weather.json file
   var jsonCity = $(this).text(); // Franklin, etc...
   console.log(jsonCity);
-  $.ajax({
-    url: "../../javascript/weather.json",
-    dataType: "json",
-    success: function (data) {
-      console.log(data);
-      console.log(data[jsonCity]);
-      var zip = data[jsonCity].zip;
-      console.log(zip);
-      getData(zip);
-    }
-  });
+  getData(i.lat, i.lon);
 });
