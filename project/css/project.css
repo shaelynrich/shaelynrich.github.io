@@ -97,7 +97,7 @@ footer a {
   p {
     font-size: 1.5em;
   }
-  figure {
+  #smallpic {
     display: none;
   }
   #imagescroll {
