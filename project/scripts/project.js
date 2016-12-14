@@ -19,6 +19,11 @@ function insertData() {
       $("#Sum").text(data.Home.Summary);
       $("#Defin").text(data.Home.Definition);
       $("#quote1").text(data.Home.Quote);
+      $("#tips").text(data.Color.Tips);
+      $("#add1").text(data.Color.Bullet1);
+      $("#add2").text(data.Color.Bullet2);
+      $("#add3").text(data.Color.Bullet3);
+      $("#add4").text(data.Color.Bullet4);
     }
   })
 }
