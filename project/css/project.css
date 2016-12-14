@@ -56,6 +56,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 95%;
+  margin-left: 20px;
   align-self: center;
 }
 
@@ -90,6 +91,10 @@ aside {
   display: none;
 }
 
+#homeworkaside {
+  display: block;
+}
+
 @media screen and (min-width: 41.67em) {
   #page-header {
     background-image: url(../images/logo-medium.png);
@@ -122,6 +127,9 @@ aside {
   }
   footer {
     font-size: 1.2em;
+  }
+  #homeworkaside {
+    display: block;
   }
 }
 
