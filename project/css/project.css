@@ -56,7 +56,6 @@ main {
   display: flex;
   flex-direction: column;
   width: 95%;
-  background-color: aliceblue;
   align-self: center;
 }
 
@@ -73,12 +72,14 @@ footer {
   background-color: cadetblue;
   font-family: sans-serif;
   width: 100%;
+  font-size: .6em;
 }
 
 footer ul {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
+  padding: 0;
 }
 
 footer a {
